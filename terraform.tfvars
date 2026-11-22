@@ -1,0 +1,12 @@
+# Copy of the README/example configuration. Replace every placeholder before deployment.
+location                  = "northcentralus"
+resource_group_name       = "rg-charter-school-network"
+admin_source_cidr         = "198.51.100.25/32" # replace with the administrator public IP/CIDR
+onprem_address_spaces     = ["10.30.0.0/16"]  # replace with the school's LAN CIDRs
+onprem_vpn_public_ip      = "198.51.100.50"   # replace with the school VPN peer public IP
+vpn_shared_key            = "REPLACE-WITH-A-LONG-RANDOM-PRE-SHARED-KEY"
+windows_admin_username    = "azureadmin"
+windows_admin_password    = "REPLACE-WITH-A-STRONG-PASSWORD"
+linux_admin_username      = "azureadmin"
+linux_ssh_public_key      = "ssh-ed25519 AAAA_REPLACE_WITH_YOUR_PUBLIC_KEY"
+enable_azure_firewall     = true
